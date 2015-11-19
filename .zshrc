@@ -1,1 +1,1 @@
-/Users/Olenthya/.zshrc
+ZSH_THEME="agnoster"
