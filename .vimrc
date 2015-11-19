@@ -1,0 +1,1 @@
+/Users/Olenthya/.yadr/vimrc
