@@ -1,1 +1,1 @@
-/Users/Olenthya/.yadr/vimrc
+/Users/Olenthya/.vimrc
