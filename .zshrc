@@ -1,11 +1,12 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.dotfiles/oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Theme
 ZSH_THEME="agnoster"
+
+# ssh
+alias martini='pinethee@martini.snucse.org'
+alias lime='pinethee@lime.ntopia.kr'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
