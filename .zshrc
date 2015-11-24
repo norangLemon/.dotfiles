@@ -5,8 +5,8 @@ export ZSH=~/.dotfiles/oh-my-zsh
 ZSH_THEME="agnoster"
 
 # ssh
-alias martini='pinethee@martini.snucse.org'
-alias lime='pinethee@lime.ntopia.kr'
+alias martini='ssh pinethee@martini.snucse.org'
+alias lime='ssh inethee@lime.ntopia.kr'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
