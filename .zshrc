@@ -6,7 +6,7 @@ ZSH_THEME="agnoster"
 
 # ssh
 alias martini='ssh pinethee@martini.snucse.org'
-alias lime='ssh inethee@lime.ntopia.kr'
+alias lime='ssh pinethee@lime.ntopia.kr'
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
