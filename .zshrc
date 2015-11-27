@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=~/.dotfiles/oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Theme
 ZSH_THEME="agnoster"
