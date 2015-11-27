@@ -1,4 +1,11 @@
+" required by vim-plug
+    call plug#begin('~/.vim/plugged')
 
+" Plugins
+    Plug 'jiangmiao/auto-pairs'
+
+" required by vim-plug
+    call plug#end()
 	set mouse=a
 
 " editing
