@@ -14,3 +14,10 @@
 
 " interface
 	set number
+	set cursorline
+
+" searching
+	set hlsearch
+
+" encoding
+	set enc=utf-8
