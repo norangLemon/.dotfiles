@@ -37,6 +37,7 @@ call plug#end()
 " interface
     set number
     set cursorline
+    hi CursorLine   cterm=NONE ctermbg=black guibg=black
     set mouse=a
 
 " searching
