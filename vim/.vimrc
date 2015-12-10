@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
     Plugin 'VundleVim/Vundle.vim'		" managing plugins
-    Plugin 'tpope/vim-surround'		" better surround
+    Plugin 'tpope/vim-surround'	        	" better surround
     Plugin 'Yggdroot/indentLine'		" shows vertical indent line
     Plugin 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
 
@@ -23,7 +23,7 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 
-" indent
+" indent 
     set autoindent
     set smartindent
 
@@ -37,8 +37,16 @@ call plug#end()
 " interface
     set number
     set cursorline
-    hi CursorLine   cterm=NONE ctermbg=black guibg=black
+    hi CursorLine cterm=NONE ctermbg=black guibg=black
+
     set mouse=a
+if has("autocmd")
+    if v:version > 701
+        autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|???\)')
+        autocmd Syntax * call matchadd('Search', '\W\zs\(FIXME\|TODO\|XXX\)')
+        autocmd Syntax * call matchadd('ErrorMsg', '\W\zs\(ERROR\|FATAL\)')
+    endif
+endif
 
 " searching
     set hlsearch
