@@ -8,7 +8,11 @@ ZSH_THEME="agnoster"
 alias martini='ssh pinethee@martini.snucse.org'
 alias lime='ssh pinethee@lime.ntopia.kr'
 alias irc='tmux attach -t irc'
+<<<<<<< HEAD
 alia peche='ssh pinethee@peche.bacchus.snucse.org'
+=======
+alias peche='ssh pinethee@peche.bacchus.snucse.org'
+>>>>>>> 69f84324f08bea6bf87ea62974c8fcee880c4ea5
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
