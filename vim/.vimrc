@@ -1,24 +1,16 @@
 " vundles
 set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-    Plugin 'VundleVim/Vundle.vim'		" managing plugins
-    Plugin 'tpope/vim-surround'	        	" better surround
-    Plugin 'Yggdroot/indentLine'		" shows vertical indent line
-    Plugin 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
-    Plugin 'junegunn/vim-xmark', { 'do': 'make' }
-
-call vundle#end()
-filetype plugin indent on
-
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
-     Plug 'jiangmiao/auto-pairs'
+    Plug 'plasticboy/vim-markdown'      
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'VundleVim/Vundle.vim'		" managing plugins
+    Plug 'tpope/vim-surround'	        	" better surround
+    Plug 'Yggdroot/indentLine'		" shows vertical indent line
+    Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
+    Plug 'junegunn/vim-xmark', { 'do': 'make' }
 "	Plug 'taglist.vim'			" shows current working symbol
 
 call plug#end()
