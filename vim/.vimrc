@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'plasticboy/vim-markdown'      
     Plug 'jiangmiao/auto-pairs'
-    Plug 'VundleVim/Vundle.vim'		" managing plugins
     Plug 'tpope/vim-surround'	        	" better surround
     Plug 'Yggdroot/indentLine'		" shows vertical indent line
     Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
