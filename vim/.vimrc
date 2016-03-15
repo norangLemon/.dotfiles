@@ -9,6 +9,7 @@ call vundle#begin()
     Plugin 'tpope/vim-surround'	        	" better surround
     Plugin 'Yggdroot/indentLine'		" shows vertical indent line
     Plugin 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
+    Plugin 'junegunn/vim-xmark', { 'do': 'make' }
 
 call vundle#end()
 filetype plugin indent on
