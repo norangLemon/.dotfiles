@@ -5,7 +5,7 @@ export ZSH=~/.oh-my-zsh
 ZSH_THEME="agnoster"
 
 # alias
-alias course='cd Dropbox/2016.\ Spring/CommStatistics'
+alias course='cd \Dropbox/2016.\ Spring'
 
 # ssh
 alias martini='ssh pinethee@martini.snucse.org'
