@@ -4,6 +4,7 @@ set nocompatible
 " vim-plug
 call plug#begin('~/.vim/plugged')
 
+    Plug 'godlygeek/tabular'
     Plug 'plasticboy/vim-markdown'      
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'	        	" better surround
@@ -13,6 +14,9 @@ call plug#begin('~/.vim/plugged')
 "	Plug 'taglist.vim'			" shows current working symbol
 
 call plug#end()
+
+" Disable automatic folding of plasticboy/vim-markdown
+let g:vim_markdown_folding_disabled = 1
 
 
 " indent 
