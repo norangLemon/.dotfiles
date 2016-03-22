@@ -1,5 +1,6 @@
-" vundles
+" eclim
 set nocompatible
+filetype plugin indent on
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
