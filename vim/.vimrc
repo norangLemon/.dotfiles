@@ -9,9 +9,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'plasticboy/vim-markdown'      
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'	        	" better surround
-    Plug 'Yggdroot/indentLine'		" shows vertical indent line
+    Plug 'Yggdroot/indentLine'		        " shows vertical indent line
     Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
     Plug 'junegunn/vim-xmark', { 'do': 'make' }
+    Plug 'sudar/vim-arduino-syntax'             " arduino syntax files
 "	Plug 'taglist.vim'			" shows current working symbol
 
 call plug#end()
