@@ -1,0 +1,7 @@
+[user]
+	email = pinethee@naver.com
+	name = norang@lemon
+[merge]
+	conflictstyle = diff3
+[core]
+        editor = vim
