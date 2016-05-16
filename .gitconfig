@@ -1,7 +1,11 @@
+# vim: noexpandtab sts=8 sw=8
 [user]
+	name = norang
 	email = pinethee@naver.com
-	name = norang@lemon
-[merge]
-	conflictstyle = diff3
 [core]
         editor = vim
+	excludesfile = ~/.gitexclude
+[push]
+	default = simple
+[merge]
+	conflictstyle = diff3
