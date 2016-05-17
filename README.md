@@ -17,5 +17,5 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 
 ### Docs
-**[Cheet Sheet](https://github.com/norangLemon/.dotfiles/bob/master/docs/CheetSheet.md)** 
-| **[Installed](https://github.com/norangLemon/.dotfiles/bob/master/docs/Installed.md)**
+**[Cheet Sheet](https://github.com/norangLemon/.dotfiles/blob/master/docs/CheetSheet.md)** 
+| **[Installed](https://github.com/norangLemon/.dotfiles/blob/master/docs/Installed.md)**
