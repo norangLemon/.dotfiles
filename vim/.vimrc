@@ -52,3 +52,9 @@ endif
 
 " encoding
     set enc=utf-8
+
+" vimdiff
+highlight DiffChange ctermbg=NONE
+highlight DiffText   ctermbg=22
+highlight DiffAdd    ctermbg=22
+highlight DiffDelete ctermbg=NONE ctermfg=235
