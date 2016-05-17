@@ -6,7 +6,7 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
 
     Plug 'godlygeek/tabular'
-    Plug 'plasticboy/vim-markdown'      
+    Plug 'plasticboy/vim-markdown'
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'	        	" better surround
     Plug 'Yggdroot/indentLine'		        " shows vertical indent line
@@ -22,14 +22,14 @@ call plug#end()
 let g:vim_markdown_folding_disabled = 1
 
 
-" indent 
+" indent
     set autoindent
     set smartindent
 
     set shiftwidth=4
     set softtabstop=4
     set expandtab
-	
+
     let g:indentLine_char = '︙'
     let g:indentLine_color_term = 239
 
