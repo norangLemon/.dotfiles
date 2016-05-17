@@ -19,3 +19,4 @@
 ### yum
 * nginx
 * iotop
+* telepot
