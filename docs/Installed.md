@@ -9,6 +9,7 @@
 ### brew cask
 * rstudio
 * fritzing
+* mysqlworkbench
 
 
 ## lemon
