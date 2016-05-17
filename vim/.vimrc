@@ -62,3 +62,7 @@ highlight DiffDelete ctermbg=NONE ctermfg=235
 " listchars
 set list
 set listchars=tab:›\ ,extends:»,precedes:«
+
+" Enable modelines
+set modeline
+set modelines=5
