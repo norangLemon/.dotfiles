@@ -58,3 +58,7 @@ highlight DiffChange ctermbg=NONE
 highlight DiffText   ctermbg=22
 highlight DiffAdd    ctermbg=22
 highlight DiffDelete ctermbg=NONE ctermfg=235
+
+" listchars
+set list
+set listchars=tab:›\ ,extends:»,precedes:«
