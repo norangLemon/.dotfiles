@@ -3,9 +3,10 @@
 	name = norang
 	email = pinethee@naver.com
 [core]
-        editor = vim
-	excludesfile = ~/.gitexclude
+	editor = vim
+	excludesfile = ~/.dotfiles/.gitexclude
 [push]
 	default = simple
 [merge]
+	tool = vimdiff
 	conflictstyle = diff3
