@@ -1,3 +1,6 @@
+" general
+set mouse=a
+
 " eclim
 set nocompatible
 filetype plugin indent on
