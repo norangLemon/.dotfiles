@@ -14,8 +14,11 @@
 
 ## lemon
 ### git cloned
+* [pyenv](https://github.com/yyuu/pyenv-installer)
 
 
 ### yum
 * nginx
 
+### pip
+* telepot
