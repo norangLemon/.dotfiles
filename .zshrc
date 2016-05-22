@@ -24,5 +24,8 @@ source $ZSH/oh-my-zsh.sh
 
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if hash pyenv 2>/dev/null
+then
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
