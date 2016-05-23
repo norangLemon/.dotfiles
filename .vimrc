@@ -7,7 +7,7 @@ filetype plugin indent on
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
-
+    Plug 'editorconfig/editorconfig-vim'        " 협업시 인덴트 조정
     Plug 'godlygeek/tabular'
     Plug 'plasticboy/vim-markdown'
     Plug 'jiangmiao/auto-pairs'
