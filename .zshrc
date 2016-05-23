@@ -6,7 +6,7 @@ ZSH_THEME="agnoster"
 export DEFAULT_USER="$USER"
 
 # alias
-alias course='cd \Dropbox/2016.\ Spring'
+alias course='cd ~/Dropbox/2016.\ Spring'
 
 # ssh
 alias martini='ssh pinethee@martini.snucse.org'
