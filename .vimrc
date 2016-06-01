@@ -1,6 +1,3 @@
-" general
-set mouse=a
-
 " eclim
 set nocompatible
 filetype plugin indent on
@@ -26,22 +23,23 @@ let g:vim_markdown_folding_disabled = 1
 
 
 " indent
-    set autoindent
-    set smartindent
+set autoindent
+set smartindent
 
-    set shiftwidth=4
-    set softtabstop=4
-    set expandtab
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
-    let g:indentLine_char = '︙'
-    let g:indentLine_color_term = 239
+let g:indentLine_char = '︙'
+let g:indentLine_color_term = 239
 
 " interface
-    set number
-    set cursorline
-    hi CursorLine cterm=NONE ctermbg=black guibg=black
+set number
+set cursorline
+hi CursorLine cterm=NONE ctermbg=black guibg=black
 
-    set mouse=a
+set mouse=a
+
 if has("autocmd")
     if v:version > 701
         autocmd Syntax * call matchadd('Debug', '\W\zs\(NOTE\|INFO\|IDEA\|???\)')
