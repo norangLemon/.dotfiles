@@ -30,3 +30,5 @@ then
   eval "$(pyenv virtualenv-init -)"
 fi
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
