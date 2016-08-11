@@ -4,7 +4,7 @@ filetype plugin indent on
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
-
+    Plug 'editorconfig/editorconfig-vim'        " 협업시 인덴트 조정
     Plug 'godlygeek/tabular'
     Plug 'plasticboy/vim-markdown'
     Plug 'jiangmiao/auto-pairs'
@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/vim-xmark', { 'do': 'make' }
     Plug 'sudar/vim-arduino-syntax'             " arduino syntax files
     Plug 'scrooloose/syntastic'                 " syntax checking
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "	Plug 'taglist.vim'			" shows current working symbol
 
 call plug#end()
