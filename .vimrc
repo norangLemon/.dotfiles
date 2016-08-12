@@ -31,7 +31,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-let g:indentLine_char = '︙'
+let g:indentLine_char = '›'
 let g:indentLine_color_term = 239
 
 " interface
