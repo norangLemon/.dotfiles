@@ -11,8 +11,7 @@ alias course='cd ~/Dropbox/2016.\ Spring'
 # ssh
 alias martini='ssh pinethee@martini.snucse.org'
 alias lime='ssh pinethee@lime.ntopia.kr'
-alias peche='ssh pinethee@peche.bacchus.snucse.org'
-alias lemon='ssh norang@lemon.norang.xyz'
+alias lemon='ssh norang@lemon.norang.io'
 
 # irc
 alias irc='tmux attach -t irc'
