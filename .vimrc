@@ -11,11 +11,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'	        	" better surround
     Plug 'Yggdroot/indentLine'		        " shows vertical indent line
     Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
-    Plug 'junegunn/vim-xmark', { 'do': 'make' }
     Plug 'sudar/vim-arduino-syntax'             " arduino syntax files
     Plug 'derekwyatt/vim-scala'                 " scala syntax files
     Plug 'scrooloose/syntastic'                 " syntax checking
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    if has('mac')
+        Plug 'junegunn/vim-xmark', { 'do': 'make' }
+    endif
 "	Plug 'taglist.vim'			" shows current working symbol
 
 call plug#end()
