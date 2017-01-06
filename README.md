@@ -39,4 +39,3 @@ Dotfiles
 
 ### Docs
 **[Cheet Sheet](https://github.com/norangLemon/.dotfiles/blob/master/docs/CheetSheet.md)** 
-| **[Installed](https://github.com/norangLemon/.dotfiles/blob/master/docs/Installed.md)**
