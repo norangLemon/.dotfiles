@@ -1,8 +1,15 @@
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+# zplug
+source ~/.zplug/init.zsh
+zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'simnalamburt/cgitc'
+zplug 'simnalamburt/shellder', as:theme
+if ! zplug check; then
+    zplug install
+fi
+zplug load
+
 
 # Theme
-ZSH_THEME="agnoster"
 export DEFAULT_USER="$USER"
 
 # alias
@@ -19,7 +26,6 @@ plugins=(git)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
-source $ZSH/oh-my-zsh.sh
 
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
