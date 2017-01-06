@@ -1,6 +1,24 @@
 Dotfiles
 =========
 
+### dependancies
+* [vim-plug](https://github.com/junegunn/vim-plug)
+    1. install vim-plug
+
+        ```
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        ```
+    1. install all the plugins in vim
+    
+        ```
+        :PlugUpdate
+        ```
+* zsh: install zsh with package manager
+* [zlug](https://github.com/zplug/zplug)
+    * OS X: `brew install zplug`
+    * else: `curl -sL zplug.sh/installer | zsh`
+
 ### How to use
 
 1. cloning repo.
