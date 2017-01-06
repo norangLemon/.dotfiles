@@ -15,9 +15,7 @@ Dotfiles
         :PlugUpdate
         ```
 * zsh: install zsh with package manager
-* [zlug](https://github.com/zplug/zplug)
-    * OS X: `brew install zplug`
-    * else: `curl -sL zplug.sh/installer | zsh`
+* [zlug](https://github.com/zplug/zplug):  `curl -sL zplug.sh/installer | zsh`
 
 ### How to use
 
@@ -35,6 +33,7 @@ Dotfiles
   ln -sf ~/.dotfiles/.bash_profile ~/.bash_profile
   ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
   ln -sf ~/.dotfiles/config ~/.ssh/config
+  ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
   ```
 
 ### Docs
