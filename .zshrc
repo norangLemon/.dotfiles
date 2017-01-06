@@ -8,6 +8,23 @@ if ! zplug check; then
 fi
 zplug load
 
+# test
+export SHELLDER_CONTEXT_BG='white'
+export SHELLDER_CONTEXT_FG='black'
+
+export SHELLDER_DIRECTORY_BG='blue'
+export SHELLDER_DIRECTORY_FG='black'
+
+export SHELLDER_GIT_CLEAN_BG='green'
+export SHELLDER_GIT_CLEAN_FG='black'
+export SHELLDER_GIT_DIRTY_BG='yellow'
+export SHELLDER_GIT_DIRTY_FG='black'
+
+export SHELLDER_VIRTUALENV_BG='yellow'
+export SHELLDER_VIRTUALENV_FG='white'
+
+export SHELLDER_STATUS_BG='black'
+export SHELLDER_STATUS_FG='white'
 
 # Theme
 export DEFAULT_USER="$USER"
