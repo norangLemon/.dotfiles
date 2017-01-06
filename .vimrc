@@ -6,14 +6,10 @@ filetype plugin indent on
 call plug#begin('~/.vim/plugged')
     Plug 'editorconfig/editorconfig-vim'        " 협업시 인덴트 조정
     Plug 'godlygeek/tabular'
-    Plug 'plasticboy/vim-markdown'
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'	        	" better surround
     Plug 'Yggdroot/indentLine'		        " shows vertical indent line
-    Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp'  }
-    Plug 'sudar/vim-arduino-syntax'             " arduino syntax files
-    Plug 'derekwyatt/vim-scala'                 " scala syntax files
-    Plug 'scrooloose/syntastic'                 " syntax checking
+    Plug 'sheerun/vim-polyglot'                 " syntax highlighting pack
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     if has('mac')
         Plug 'junegunn/vim-xmark', { 'do': 'make' }
@@ -22,8 +18,9 @@ call plug#begin('~/.vim/plugged')
 
 call plug#end()
 
-" Disable automatic folding of plasticboy/vim-markdown
+" Disable automatic folding and concealing of plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_conceal = 0
 
 
 " indent
