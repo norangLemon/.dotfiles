@@ -8,7 +8,7 @@ if ! zplug check; then
 fi
 zplug load
 
-# test
+# shellder color scheme
 export SHELLDER_CONTEXT_BG='white'
 export SHELLDER_CONTEXT_FG='black'
 
@@ -54,3 +54,8 @@ fi
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# yarn
+if hash yarn 2>/dev/null
+    then export PATH="$PATH:`yarn global bin`"
+fi
