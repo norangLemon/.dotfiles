@@ -3,7 +3,7 @@ set nocompatible
 filetype plugin indent on
 
 " vim-plug
-call plug#begin('~/.vim/plugged')
+try | call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
     Plug 'editorconfig/editorconfig-vim'        " 협업시 인덴트 조정
     Plug 'godlygeek/tabular'
     Plug 'jiangmiao/auto-pairs'
@@ -11,12 +11,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'Yggdroot/indentLine'		        " shows vertical indent line
     Plug 'sheerun/vim-polyglot'                 " syntax highlighting pack
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    if has('mac')
-        Plug 'junegunn/vim-xmark', { 'do': 'make' }
-    endif
-"	Plug 'taglist.vim'			" shows current working symbol
-
-call plug#end()
+call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | echo 'No vim-plug' | endtry
 
 " Disable automatic folding and concealing of plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled = 1
