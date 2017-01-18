@@ -29,16 +29,11 @@ export SHELLDER_STATUS_FG='white'
 # Theme
 export DEFAULT_USER="$USER"
 
-# alias
-alias course='cd ~/Dropbox/2016.\ Spring'
-
 # ssh
 alias martini='ssh pinethee@martini.snucse.org'
 alias lime='ssh pinethee@lime.ntopia.kr'
 alias lemon='ssh norang@lemon.norang.io'
 
-# irc
-alias irc='tmux attach -t irc'
 plugins=(git)
 
 # User configuration
