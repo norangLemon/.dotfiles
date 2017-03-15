@@ -1,4 +1,7 @@
-" eclim
+" OS
+set tags+=~/linux-3.10-artik/tags
+cs add ~/linux-3.10-artik/cscope.out
+
 set nocompatible
 filetype plugin indent on
 
@@ -7,8 +10,8 @@ try | call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
     Plug 'editorconfig/editorconfig-vim'        " 협업시 인덴트 조정
     Plug 'godlygeek/tabular'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'tpope/vim-surround'	        	" better surround
-    Plug 'Yggdroot/indentLine'		        " shows vertical indent line
+    Plug 'tpope/vim-surround'                   " better surround
+    Plug 'Yggdroot/indentLine'                  " shows vertical indent line
     Plug 'sheerun/vim-polyglot'                 " syntax highlighting pack
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | echo 'No vim-plug' | endtry
