@@ -25,9 +25,8 @@ let g:vim_markdown_conceal = 0
 set autoindent
 set smartindent
 
-set shiftwidth=4
-set softtabstop=4
-set expandtab
+set shiftwidth=8
+set tabstop=8
 
 let g:indentLine_char = '›'
 let g:indentLine_color_term = 239
