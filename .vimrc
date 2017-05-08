@@ -7,19 +7,31 @@ filetype plugin indent on
 
 " vim-plug
 try | call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
-    Plug 'editorconfig/editorconfig-vim'        " 협업시 인덴트 조정
+    Plug 'vim-airline/vim-airline'              " shows current status
+    Plug 'vim-airline/vim-airline-themes'       " airline theme
+    Plug 'airblade/vim-gitgutter'               " shows git-diff
+    Plug 'tpope/vim-fugitive'                   " use git commands in vim & shows git status
+    Plug 'editorconfig/editorconfig-vim'        " configuration for cooperation
+    Plug 'tpope/vim-git'                        " git syntax highlighter
     Plug 'godlygeek/tabular'
     Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'                   " better surround
     Plug 'Yggdroot/indentLine'                  " shows vertical indent line
     Plug 'sheerun/vim-polyglot'                 " syntax highlighting pack
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    if v:version >= 702
+        Plug 'justinmk/vim-dirvish'             " path nevigator
+    endif
 call plug#end() | catch /^Vim\%((\a\+)\)\=:E117/ | echo 'No vim-plug' | endtry
 
 " Disable automatic folding and concealing of plasticboy/vim-markdown
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_conceal = 0
 
+" vim airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline_theme='murmur'
 
 " indent
 set autoindent
