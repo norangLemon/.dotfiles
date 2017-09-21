@@ -15,7 +15,7 @@ Dotfiles
         :PlugUpdate
         ```
 * zsh: install zsh with package manager
-* [zlug](https://github.com/zplug/zplug):  `curl -sL zplug.sh/installer | zsh`
+* [zlug](https://github.com/zplug/zplug):  `curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh`
 
 ### How to use
 
