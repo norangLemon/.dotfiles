@@ -10,8 +10,6 @@ try | call plug#begin(exists('s:plug') ? s:plug : '~/.vim/plugged')
     Plug 'editorconfig/editorconfig-vim'        " configuration for cooperation
     Plug 'tpope/vim-git'                        " git syntax highlighter
     Plug 'godlygeek/tabular'
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'tpope/vim-surround'                   " better surround
     Plug 'Yggdroot/indentLine'                  " shows vertical indent line
     Plug 'sheerun/vim-polyglot'                 " syntax highlighting pack
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
