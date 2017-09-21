@@ -1,7 +1,3 @@
-" OS
-set tags+=~/linux-3.10-artik/tags
-cs add ~/linux-3.10-artik/cscope.out
-
 set nocompatible
 filetype plugin indent on
 
