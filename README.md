@@ -25,7 +25,7 @@ Dotfiles
   cd ~
   git clone git@github.com:norangLemon/.dotfiles.git
   ```
-  
+
 1. make simlink
   ```
   ln -sf ~/.dotfiles/.vimrc ~/.vimrc
@@ -34,6 +34,7 @@ Dotfiles
   ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
   ln -sf ~/.dotfiles/config ~/.ssh/config
   ln -sf ~/.dotfiles/.tmux.conf ~/.tmux.conf
+  ln -sf ~/.dotfiles/editorconfig ~/.editorconfig
   ```
 
 ### Docs

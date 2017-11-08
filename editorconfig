@@ -1,0 +1,6 @@
+# this is top-most EditorConfig
+root = true
+
+[*.{md,ml}]
+indent_style = space
+indent_size = 2
