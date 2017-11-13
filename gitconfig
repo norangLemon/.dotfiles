@@ -4,7 +4,7 @@
 	email = noranglemon@gmail.com
 [core]
 	editor = vim
-	excludesfile = ~/.dotfiles/.gitexclude
+	excludesfile = ~/.gitexclude
 	precomposeunicode = true
 [push]
 	default = simple
