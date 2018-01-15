@@ -21,6 +21,15 @@ Dotfiles
   curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
   ```
   
+* [powerline font](https://github.com/powerline/fonts)
+
+  ```
+  git clone https://github.com/powerline/fonts.git --depth=1
+  cd fonts
+  ./install.sh
+  cd ..
+  rm -rf fonts
+  ```
 
 ### How to use
 
