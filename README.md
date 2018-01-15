@@ -47,3 +47,8 @@ Dotfiles
 
 ### Docs
 **[Cheet Sheet](https://github.com/norangLemon/.dotfiles/blob/master/docs/CheetSheet.md)** 
+
+### Links
+
+* [Iterms2](https://www.iterm2.com/)
+* Iterms2 Theme - [afterglow](https://github.com/YabataDesign/afterglow-itermcolors)
