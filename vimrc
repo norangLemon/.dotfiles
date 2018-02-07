@@ -44,7 +44,7 @@ set cursorline
 hi CursorLine cterm=NONE ctermbg=black guibg=black
 
 set fillchars+=vert:│
-hi VertSplit cterm=NONE
+hi VertSplit cterm=NONE ctermbg=NONE ctermfg=NONE
 
 
 set mouse=a
