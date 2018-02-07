@@ -8,10 +8,6 @@ if ! zplug check; then
 fi
 zplug load
 
-# Debian packaging tool
-export DEBFULLNAME="Yoonmi Roh (norang)"
-export DEBEMAIL="norangLemon@gmail.com"
-
 # shellder color scheme
 export SHELLDER_CONTEXT_BG='white'
 export SHELLDER_CONTEXT_FG='black'
@@ -32,11 +28,6 @@ export SHELLDER_STATUS_FG='white'
 
 # Theme
 export DEFAULT_USER="$USER"
-
-# ssh
-alias martini='ssh pinethee@martini.snucse.org'
-alias lime='ssh pinethee@lime.ntopia.kr'
-alias lemon='ssh norang@lemon.norang.io'
 
 plugins=(git)
 
