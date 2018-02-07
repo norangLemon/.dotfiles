@@ -43,6 +43,10 @@ set number
 set cursorline
 hi CursorLine cterm=NONE ctermbg=black guibg=black
 
+set fillchars+=vert:│
+hi VertSplit cterm=NONE
+
+
 set mouse=a
 
 if has("autocmd")
