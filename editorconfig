@@ -1,6 +1,6 @@
 # this is top-most EditorConfig
 root = true
 
-[*.{md,ml,html,scala}]
+[*.{md,ml,html,scala,vue}]
 indent_style = space
 indent_size = 2
