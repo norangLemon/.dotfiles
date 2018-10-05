@@ -8,6 +8,9 @@ if ! zplug check; then
 fi
 zplug load
 
+# makefile env for ps
+export CPPFLAGS='-std=c++1z -O3'
+
 # shellder color scheme
 export SHELLDER_CONTEXT_BG='white'
 export SHELLDER_CONTEXT_FG='black'
