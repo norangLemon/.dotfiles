@@ -1,7 +1,7 @@
 Dotfiles
 =========
 
-### dependancies
+### dependencies
 * [vim-plug](https://github.com/junegunn/vim-plug)
     1. install vim-plug
 
@@ -34,16 +34,14 @@ Dotfiles
 ### How to use
 
 1. cloning repo.
-
-  ```
-  cd ~
-  git clone git@github.com:norangLemon/.dotfiles.git
-  ```
-
+    ```
+    cd ~
+    git clone git@github.com:norangLemon/.dotfiles.git
+    ```
 1. make simlink
-  ```
-  ./make_link.sh
-  ```
+    ```
+    ./make_link.sh
+    ```
 
 ### Docs
 **[Cheet Sheet](https://github.com/norangLemon/.dotfiles/blob/master/docs/CheetSheet.md)** 
