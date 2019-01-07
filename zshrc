@@ -1,13 +1,3 @@
-# zplug
-source ~/.zplug/init.zsh
-zplug 'zsh-users/zsh-syntax-highlighting'
-zplug 'simnalamburt/cgitc'
-zplug 'simnalamburt/shellder', as:theme
-if ! zplug check; then
-    zplug install
-fi
-zplug load
-
 # makefile env for ps
 export CPPFLAGS='-std=c++1z -O3'
 
@@ -52,3 +42,15 @@ fi
 if hash yarn 2>/dev/null
     then export PATH="$PATH:`yarn global bin`"
 fi
+
+## zplug
+source ~/.zplug/init.zsh
+zplug 'zsh-users/zsh-syntax-highlighting'
+zplug 'simnalamburt/cgitc'
+zplug 'simnalamburt/shellder', as:theme
+if ! zplug check; then
+    zplug install
+fi
+zplug load
+
+
