@@ -1,10 +1,5 @@
-Host sherry.snucse.org
-  User sherry
-
-Host martini.snucse.org
-    User pinethee 
-Host lime.ntopia.kr
-    User pinethee
+Include ~/.dotfiles/exclusives/sshconfig
 
 Host norang.io
     User norang
+
