@@ -9,11 +9,15 @@ function backup {
     fi
 }
 
+backup ".zshrc"
+if [ -e "exclusives/zshrc" ]; then
+    ln -sf ~/.dotfiles/exclusives/zshrc ~/.zshrc
+else
+    ln -sf ~/.dotfiles/zshrc ~/.zshrc
+fi
+
 backup ".vimrc"
 ln -sf ~/.dotfiles/vimrc ~/.vimrc
-
-backup ".zshrc"
-ln -sf ~/.dotfiles/zshrc ~/.zshrc
 
 backup ".bash_profile"
 ln -sf ~/.dotfiles/bash_profile ~/.bash_profile
