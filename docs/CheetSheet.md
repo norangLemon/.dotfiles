@@ -4,8 +4,29 @@ CheetSheet
 ### ssh
 * key pair generation
     ```
-    ssh-keygen -t de25519
+    ssh-keygen -t ed25519
     ```
+
+### vim
+* move among panes: ctrl + w + [direction keys]
+
+### tmux
+* split horizontally: ctrl + b + "
+* split vertically: ctrl + b + %
+
+### [pyenv](https://github.com/pyenv/pyenv-virtualenv)
+* make virtual environment of version VERSION
+  ```
+  pyenv virtualenv VERSION VENV_NAME
+  ```
+* confirm list of virtual environment
+  ```
+  pyenv virtualenvs
+  ```
+* activate|deactivate a virtualenvironment
+  ```
+  activate|decativate VENV_NAME
+  ```
 
 ### General
 * [the-silver-searcher](https://github.com/ggreer/the_silver_searcher)
@@ -27,13 +48,6 @@ CheetSheet
     ```
     ctrl + t
     ```
-
-### brew
-
-### yum
-
-### apt-get
-
 ### User & Group
 
 #### User
