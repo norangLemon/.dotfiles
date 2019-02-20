@@ -1,3 +1,7 @@
+" encoding
+set enc=utf-8
+scriptencoding utf-8
+
 set nocompatible
 filetype plugin indent on
 
@@ -58,10 +62,7 @@ if has("autocmd")
 endif
 
 " searching
-    set hlsearch
-
-" encoding
-    set enc=utf-8
+set hlsearch
 
 " vimdiff
 highlight DiffChange ctermbg=NONE
