@@ -5,34 +5,37 @@ function backup {
     FILE="$HOME/$1"
     if [ -e "$FILE" ]; then
         mv $FILE "$FILE.backup"
-        echo "$FILE moved to $FILE.backup"
+        echo -e "$FILE \e[1mis moved to\e[0m $FILE.backup"
     fi
 }
 
+echo "start making simlinks"
+
 backup ".zshrc"
 if [ -e "exclusives/zshrc" ]; then
-    ln -sf ~/.dotfiles/exclusives/zshrc ~/.zshrc
+    ln -s ~/.dotfiles/exclusives/zshrc ~/.zshrc
+    echo -e "  \e[1mUse exclusive zshrc\e[0m"
 else
-    ln -sf ~/.dotfiles/zshrc ~/.zshrc
+    ln -s ~/.dotfiles/zshrc ~/.zshrc
 fi
 
 backup ".vimrc"
-ln -sf ~/.dotfiles/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vimrc ~/.vimrc
 
 backup ".bash_profile"
-ln -sf ~/.dotfiles/bash_profile ~/.bash_profile
+ln -s ~/.dotfiles/bash_profile ~/.bash_profile
 
-backup ".gitconifg"
-ln -sf ~/.dotfiles/gitconfig ~/.gitconfig
+backup ".gitconfig"
+ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 
 backup ".gitexclude"
-ln -sf ~/.dotfiles/gitexclude ~/.gitexclude
+ln -s ~/.dotfiles/gitexclude ~/.gitexclude
 
 backup ".ssh/config"
-ln -sf ~/.dotfiles/config ~/.ssh/config
+ln -s ~/.dotfiles/config ~/.ssh/config
 
 backup ".tmux.conf"
-ln -sf ~/.dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 
 backup ".editorconfig"
-ln -sf ~/.dotfiles/editorconfig ~/.editorconfig
+ln -s ~/.dotfiles/editorconfig ~/.editorconfig
