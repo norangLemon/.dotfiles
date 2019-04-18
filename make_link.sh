@@ -21,6 +21,11 @@ fi
 
 backup ".vimrc"
 ln -s ~/.dotfiles/vimrc ~/.vimrc
+if [ -e "exclusives/vimrc" && ! -z $CORP ]; then
+    ln -sf ~/.dotfiles/exclusives/vimrc ~/.vimrc
+else
+    ln -sf ~/.dotfiles/vimrc ~/.vimrc
+fi
 
 backup ".bash_profile"
 ln -s ~/.dotfiles/bash_profile ~/.bash_profile
