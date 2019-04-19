@@ -26,6 +26,8 @@ plugins=(git)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
