@@ -15,7 +15,7 @@ function backup {
 echo "start making simlinks"
 
 backup ".zshrc"
-if [ -e "exclusives/zshrc" ]; then
+if [[ -e "exclusives/zshrc" && -n "$CORP" ]]; then
     ln -s ~/.dotfiles/exclusives/zshrc ~/.zshrc
     echo -e "  \e[1mUse exclusive zshrc\e[0m"
 else
