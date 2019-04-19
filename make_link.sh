@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # backup function to move existing config file
 function backup {
