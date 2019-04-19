@@ -3,7 +3,10 @@
 # backup function to move existing config file
 function backup {
     FILE="$HOME/$1"
-    if [ -e "$FILE" ]; then
+    if [ -L "$FILE" ]; then
+        rm "$FILE"
+        echo -e "$FILE is symlink; \e[1mremoved\e[0m"
+    elif [ -e "$FILE" ]; then
         mv "$FILE" "$FILE.backup"
         echo -e "$FILE \e[1mis moved to\e[0m $FILE.backup"
     fi
@@ -20,12 +23,11 @@ else
 fi
 
 backup ".vimrc"
-ln -s ~/.dotfiles/vimrc ~/.vimrc
 if [[ -e "exclusives/vimrc" && -n "$CORP" ]]; then
-    ln -sf ~/.dotfiles/exclusives/vimrc ~/.vimrc
+    ln -s ~/.dotfiles/exclusives/vimrc ~/.vimrc
     echo -e "  \e[1mUse exclusive vimrc\e[0m"
 else
-    ln -sf ~/.dotfiles/vimrc ~/.vimrc
+    ln -s ~/.dotfiles/vimrc ~/.vimrc
 fi
 
 backup ".bash_profile"
