@@ -37,7 +37,7 @@ backup ".gitexclude"
 ln -s ~/.dotfiles/gitexclude ~/.gitexclude
 
 backup ".ssh/config"
-ln -s ~/.dotfiles/config ~/.ssh/config
+ln -s ~/.dotfiles/sshconfig ~/.ssh/config
 
 backup ".tmux.conf"
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
