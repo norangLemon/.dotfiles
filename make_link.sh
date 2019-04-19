@@ -1,5 +1,10 @@
 #!/bin/zsh
 
+# initialize CORP using hostname.sh
+if [[ -e "exclusives/hostname.sh" ]]; then
+    source "exclusives/hostname.sh"
+fi
+
 # backup function to move existing config file
 function backup {
     FILE="$HOME/$1"
