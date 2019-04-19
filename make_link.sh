@@ -4,7 +4,7 @@
 function backup {
     FILE="$HOME/$1"
     if [ -e "$FILE" ]; then
-        mv $FILE "$FILE.backup"
+        mv "$FILE" "$FILE.backup"
         echo -e "$FILE \e[1mis moved to\e[0m $FILE.backup"
     fi
 }
@@ -21,8 +21,9 @@ fi
 
 backup ".vimrc"
 ln -s ~/.dotfiles/vimrc ~/.vimrc
-if [ -e "exclusives/vimrc" && ! -z $CORP ]; then
+if [[ -e "exclusives/vimrc" && -n "$CORP" ]]; then
     ln -sf ~/.dotfiles/exclusives/vimrc ~/.vimrc
+    echo -e "  \e[1mUse exclusive vimrc\e[0m"
 else
     ln -sf ~/.dotfiles/vimrc ~/.vimrc
 fi
