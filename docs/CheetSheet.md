@@ -14,7 +14,11 @@ CheetSheet
 * split horizontally: ctrl + b + "
 * split vertically: ctrl + b + %
 
-### [pyenv](https://github.com/pyenv/pyenv-virtualenv)
+### [pyenv], [pyenv-virtualenv]
+* make new version
+  ```
+  pyenv install VERSION
+  ```
 * make virtual environment of version VERSION
   ```
   pyenv virtualenv VERSION VENV_NAME
@@ -25,7 +29,7 @@ CheetSheet
   ```
 * activate|deactivate a virtualenvironment
   ```
-  activate|decativate VENV_NAME
+  pyenv activate|decativate VENV_NAME
   ```
 
 ### General
@@ -176,3 +180,5 @@ CheetSheet
     ```
 
 
+[pyenv]: https://github.com/pyenv/pyenv
+[pyenv-virtualenv]: https://github.com/pyenv/pyenv-virtualenv
