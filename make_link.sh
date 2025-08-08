@@ -9,22 +9,22 @@ fi
 function backup {
     FILE="$HOME/$1"
     if [ ! -e "$FILE" ]; then
-    ›   return
+       return
     fi
     DEST="$FILE"
     NUM=0
     while [ -e "$DEST" ]; do
-    ›   if [ -L "$DEST" ]; then
-    ›   ›   rm "$DEST"
-    ›   ›   echo -e "$DEST is symlink; \e[1mremoved\e[0m"
-    ›   ›   break
-    ›   fi
-    ›   ((NUM++))
-    ›   DEST="$FILE.backup$NUM"
-    done
+      if [ -L "$DEST" ]; then
+        rm "$DEST"
+        echo -e "$DEST is symlink; \e[1mremoved\e[0m"
+        break
+      fi
+      ((NUM++))
+      DEST="$FILE.backup$NUM"
+      done
     if [ -e "$FILE" ]; then
-    ›   mv "$FILE" "$DEST"
-    ›   echo -e "$FILE \e[1mis moved to\e[0m $DEST"
+      mv "$FILE" "$DEST"
+      echo -e "$FILE \e[1mis moved to\e[0m $DEST"
     fi
 }
 
