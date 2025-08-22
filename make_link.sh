@@ -11,20 +11,20 @@ function backup {
   if [ ! -e "$FILE" ]; then
     return
   fi
-    DEST="$FILE"
-    NUM=0
-    while [ -e "$DEST" ]; do
-      if [ -L "$DEST" ]; then
-        rm "$DEST"
-        echo -e "$DEST is symlink; \e[1mremoved\e[0m"
-        break
-      fi
-      ((NUM++))
-      DEST="$FILE.backup$NUM"
-    done
-    if [ -e "$FILE" ]; then
-      mv "$FILE" "$DEST"
-      echo -e "$FILE \e[1mis moved to\e[0m $DEST"
+  DEST="$FILE"
+  NUM=0
+  while [ -e "$DEST" ]; do
+    if [ -L "$DEST" ]; then
+      rm "$DEST"
+      echo -e "$DEST is symlink; \e[1mremoved\e[0m"
+      break
+    fi
+    ((NUM++))
+    DEST="$FILE.backup$NUM"
+  done
+  if [ -e "$FILE" ]; then
+    mv "$FILE" "$DEST"
+    echo -e "$FILE \e[1mis moved to\e[0m $DEST"
   fi
 }
 
@@ -53,7 +53,7 @@ fi
 
 backup ".blazerc"
 if [[ -e "exclusives/blazerc" && "$IS_CLOUD" == "true" ]]; then
-  ln -s ~/.dotfiles/blazerc ~/.blazerc
+  ln -s ~/.dotfiles/exclusives/blazerc ~/.blazerc
 fi
 
 backup ".hgrc"
